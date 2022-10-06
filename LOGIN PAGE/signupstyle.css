@@ -1,0 +1,288 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body
+{
+  height: 100%;
+  width: 100%;
+}
+
+body
+{
+  display: flex;
+}
+
+.column_1
+{
+  width: 40vw;
+  height: 100vh;
+  margin: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav
+{
+  position: absolute;
+  display: flex;
+  /* justify-content: space-evenly; */
+  height: 12vh;
+  margin-top: 2vh;
+  width: 20vw;
+}
+
+nav .nav_logo_img img
+{
+  height: 13vh;
+  width: auto;
+}
+
+.nav_company_name
+{
+  display: inline-flex;
+  align-items: center;
+}
+
+.point
+{
+  color: rgb(51, 252, 51);
+}
+
+.form_box
+{
+  width: 25vw;
+  height: 65vh;
+  box-shadow: 0px 0 20px #424242;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome_text_content
+{
+margin-left: 4vw;
+}
+
+.welcome_text_content h3
+{
+font-size: 16px;
+}
+
+.google_login
+{
+  margin-top: 4vh;
+  justify-content: center;
+  display: flex;
+}
+
+.google_login button
+{
+  height: 5vh;
+  width: 36vh;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #bcbcbc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.google_logo
+{
+  height: 20px;
+  margin-left: 3vw;
+  margin-right: 1vh;
+}
+
+.column_2
+{
+  float: right;
+  width: 60vw;
+  height: 100vh;
+}
+
+
+.column_2 img
+{
+  height: 100vh;
+  width: 60vw;
+  float: right;
+}
+
+.social_media_contact img
+{
+  height: 3vh;
+  width: auto;
+  margin-left: 2%;
+}
+
+.social_media_contact
+{ 
+  display: flex;
+  justify-content: center;
+}
+
+#text_welcome
+{
+  font-size: 4vh;
+  margin-top: 1vh;
+}
+
+#text_google_login
+{
+  font-size: 15px;
+}
+
+
+.floatClear {
+  clear: both;
+}
+
+#wrapper {
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+#wrapper .line {
+  border-bottom: 2px solid rgb(180, 180, 180);
+  position: absolute;
+  width: 80%;
+  top: 15px;
+}
+#wrapper .textbox {
+  position: absolute;
+  width: 100%;
+}
+#wrapper .textbox .text {
+  background-color: white;
+  margin: 0px auto;
+  padding: 0px 10px;
+  text-align: center;
+  display: inline;
+  font-size: 24px;
+}
+
+form
+{
+  padding-left: 8vh;
+}
+
+form input
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+.login_inputs
+{
+margin-top: 5vh;
+}
+
+.login_inputs a
+{
+  float: right;
+  padding-right: 10vh;
+}
+
+.login_button
+{
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login_button button
+{
+  border: none;
+  height: 4vh;
+  width: 33vh;
+  padding: 0vh;
+  background: #1ae21a;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  margin-bottom: 3vh;
+}
+
+
+
+@media only screen and (max-width: 1024px)
+{
+
+  .google_login button
+  {
+    width: 26vh;
+  }
+  
+  #text_google_login
+  {
+    font-size: 10px;
+  }
+
+  .google_logo 
+  {
+    height: 15px;
+  }
+  .social_media_contact img 
+  {
+    height: 2vh;
+  }
+}
+
+@media only screen and (max-width: 767px)
+{
+
+  .column_2
+  {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+
+  .column_1
+  {
+    width: 100vw;
+  }
+
+  .form_box
+  {
+    width: 50vw;
+    height: 70vh;
+  }
+
+}
+
+@media only screen and (max-width: 480px)
+{
+  .form_box
+  {
+    width: 70vw;
+    height: 70vh;
+  }
+
+  .login_button button 
+  {
+    width: 20vh;
+  }
+
+  .login_inputs a
+  {
+    font-size: 12px;
+  }
+
+
+}
